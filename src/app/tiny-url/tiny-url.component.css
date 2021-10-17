@@ -2,14 +2,15 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    min-width: 800px;
     min-height: max-content;
+    min-width: fit-content;
 }
 
 .flex-column {
     justify-content: center;
     align-items: center;
     height: auto;
+    min-width: fit-content;
 }
 
 .flex-column a {
@@ -66,8 +67,37 @@
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     overflow-wrap: break-word;
+    height: auto;
+    word-break: break-all;
+    overflow-block: hidden;
 }
 
 .text-head {
     font-size: 30px;
+}
+
+.list-group-item a {
+    color: violet;
+    text-decoration: none;
+}
+
+@media only screen and (min-width:800px) {
+    .custom input[type=url] {
+        min-height: 55px;
+        min-width: 600px;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .custom input[type=url] {
+        min-height: 55px;
+        min-width: 400px;
+    }
+}
+
+@media only screen and (max-width:400px) {
+    .custom input[type=url] {
+        min-height: 55px;
+        min-width: 200px;
+    }
 }

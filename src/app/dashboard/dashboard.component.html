@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
             <div class="row">
-                <div class="col-xl-5 col-lg-5 mb-5">
+                <div class="col-xl-5 mb-5">
                     <app-card title="Total Links" [count]=totalcnt></app-card>
                 </div>
-                <div class="col-xl-7 col-lg-5 mb-5">
+                <div class="col-xl-7 mb-5">
                     <app-card title="Today's generated links count" [count]=todaycnt></app-card>
                 </div>
             </div>
             <div class="row mt-5">
-                <div class="col-xl-12">
+                <div class="col-xl-12 col-lg-5">
                     <div *ngIf="drawData.length>0">
                         <ngx-charts-line-chart [view]="view1" [scheme]="colorScheme" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxis]="showXAxis" [yAxis]="showYAxis" [xAxisLabel]="xAxisLabel1" [yAxisLabel]="yAxisLabel1" [timeline]="timeline"
                             [results]="drawData">
@@ -19,7 +19,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-xl-5 custom-flex p-2">
+        <div class="col-xl-5 col-lg-6 custom-flex p-2">
             <div *ngIf="dateData.length>0">
                 <div class="text-head">
                     <p>This Week</p>
@@ -31,7 +31,7 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <div class="col-xl-6">
+        <div class="col-xl-6 col-lg-6">
             <div *ngIf="drawMonth.length>0">
                 <div class="text-head">
                     <p>Monthly</p>

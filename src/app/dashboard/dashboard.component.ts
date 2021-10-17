@@ -20,7 +20,7 @@ export class DashboardComponent implements OnInit {
   currWeek: number = 0;
   currYear: string = this.currDate.slice(0, 4);
   view: any = [500, 400];
-  view1:any=[590,500];
+  view1:any=[560,500];
   view2:any=[600,500];
   showXAxis: boolean = true;
   showYAxis: boolean = true;

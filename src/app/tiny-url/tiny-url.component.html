@@ -5,7 +5,7 @@
                 <div class="d-flex flex-column bd-highlight bg-color shadow p-3 mb-5 rounded">
                     <div class="p-2 bd-highlight">
                         <div class="d-flex flex-row bd-highlight mb-0 custom">
-                            <div class="col-xl-10">
+                            <div class="col-xl-10 px-5">
                                 <input type="url" formControlName="urlbox" placeholder="Shorten Your URL" [ngClass]="{'p-2':true,'bd-highlight':true,'form-control':true,'px-5':true,'py-2':true}">
                             </div>
                             <div class="col-xl-2 p-2 bd-highlight"><button class="btn btn-primary px-5 py-2" (click)="listen()" [disabled]="short">Shorten</button></div>
@@ -28,7 +28,7 @@
         <div class="row">
             <div class="col-xl-12">
                 <p class="text-head">
-                    Recent
+                    Recently Created
                 </p>
             </div>
         </div>
@@ -39,7 +39,7 @@
                         <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of links">
                             <div class="col-xl-12">
                                 <div class="p-2">
-                                    <a [routerLink]="[item.shortUrl]" target="_blank">{{"localhost:4200/p/"+item.shortUrl}}</a>
+                                    <a [href]="item.longUrl" target="_blank" (click)="clickEvent(item)">{{"localhost:4200/p/"+item.shortUrl}}</a>
                                 </div>
                                 <div class="p-2">
                                     <p class="text1 shadow p-3 rounded">{{item.longUrl}}</p>

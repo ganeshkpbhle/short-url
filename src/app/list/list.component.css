@@ -10,6 +10,9 @@
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     overflow-wrap: break-word;
+    height: auto;
+    word-break: break-all;
+    overflow-block: hidden;
 }
 
 .flex-column a {
@@ -17,4 +20,5 @@
     font-weight: bolder;
     text-decoration: none;
     color: darkviolet;
+    flex-basis: auto;
 }
