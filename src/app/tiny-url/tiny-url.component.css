@@ -1,0 +1,73 @@
+.flex-row {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    min-width: 800px;
+    min-height: max-content;
+}
+
+.flex-column {
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.flex-column a {
+    text-decoration: none;
+}
+
+.has-error {
+    border: 2px solid;
+    border-color: red;
+}
+
+.has-success {
+    border: 2px solid;
+    border-color: green;
+}
+
+.bg-color {
+    background-color: rgb(53, 54, 126);
+}
+
+.custom button {
+    min-height: 55px;
+    background-color: darkslateblue;
+}
+
+.custom input[type=url] {
+    min-height: 55px;
+}
+
+.custom-text1 {
+    color: black;
+}
+
+.flex-column p {
+    margin: 0 auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 30px;
+    padding: 8px;
+    text-align: center;
+    min-height: max-content;
+    border-radius: 5px;
+    background-color: rgb(219, 121, 150);
+    color: rgb(248, 248, 255);
+    border: transparent;
+}
+
+.custom button:hover {
+    background-color: rgb(46, 61, 104);
+}
+
+.text1 {
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    overflow-wrap: break-word;
+}
+
+.text-head {
+    font-size: 30px;
+}

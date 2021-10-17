@@ -1,0 +1,15 @@
+.flex-row {
+    justify-content: space-evenly;
+}
+
+.custom-flex {
+    margin: 0 auto;
+    min-width: max-content;
+    max-height: fit-content;
+}
+
+.text-head {
+    text-align: center;
+    font-size: 30px;
+    margin: 0 auto;
+}

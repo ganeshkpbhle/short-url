@@ -1,0 +1,21 @@
+.text1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 55px;
+    margin: 0 auto;
+}
+
+.img-fluid {
+    margin: 0 auto;
+    min-width: 500px;
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.text2 {
+    margin: 0 auto;
+    margin-left: 10px;
+    font-size: 22px;
+}

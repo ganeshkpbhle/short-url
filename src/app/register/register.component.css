@@ -1,0 +1,40 @@
+.text1 {
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 37px;
+}
+
+.text2 {
+    text-align: center;
+    color: rgb(46, 44, 44);
+    font-size: 15px;
+    padding: 2px;
+    font-family: 'Noto Sans Mono', monospace;
+}
+
+.has-error {
+    border-color: red;
+}
+
+.has-success {
+    border-color: green;
+}
+
+.flex-column {
+    min-width: 500px;
+}
+
+.text3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 32px;
+}
+
+.dateInput {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+}
+
+.flex-column button {
+    margin: 0 auto;
+    margin-left: 180px;
+}

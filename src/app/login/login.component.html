@@ -1,0 +1,53 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-12">
+            <p class="text1">Log in and start sharing</p>
+            <p class="text2">Dont have an Account <a href="">Sign-up</a></p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-12">
+            <form [formGroup]="form">
+                <div class="d-flex flex-column bd-highlight mb-3 custom-flx-1 shadow p-3 mb-5 bg-white rounded">
+                    <div class="p-2 bd-highlight">
+                        <i class="fas fa-user fa-2x"></i>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input placeholder="Email" [ngClass]="{
+                        'has-error':form.controls.Email.touched && form.controls.Email.invalid,
+                        'has-success':form.controls.Email.touched && form.controls.Email.valid}" type="email" name="Email" formControlName="Email" class="form-control">
+                        <span style="color:red;" *ngIf="form.controls.Email.touched && form.controls.Email.invalid">Enter
+                            valid email
+                        </span>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input placeholder="Password" [ngClass]="{
+                            'has-error':form.controls.Passwd.touched && form.controls.Passwd.invalid,
+                            'has-success':form.controls.Passwd.touched && form.controls.Passwd.valid}" type="password" name="Passwd" formControlName="Passwd" class="form-control">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <button class="btn btn-primary">Login</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-xl-12">
+            <p class="Or">OR</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="d-flex flex-row bd-highlight mb-3 custom-flx-1 p-3 mb-5 bg-white rounded">
+            <div class="col-xl-4 p-2 bd-highlight">
+                <button class="btn btn-primary"><i class="fab fa-google"></i> Google </button>
+            </div>
+            <div class="col-xl-4 p-2 bd-highlight">
+                <button class="btn btn-primary"><i class="fab fa-twitter-square"></i> Twitter </button>
+            </div>
+            <div class="col-xl-4 p-2 bd-highlight">
+                <button class="btn btn-primary"><i class="fab fa-apple"></i> Apple </button>
+            </div>
+        </div>
+    </div>
+</div>

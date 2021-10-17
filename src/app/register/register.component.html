@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-xl-10">
+            <p class="text1">Discover the ShortUrl solution that's right for you</p>
+            <p class="text2">ShortUrl helps you build and protect your brand so you can leverage it across your communication channels to drive powerful buisness results</p>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-auto">
+            <div class="d-flex flex-column bd-highlight mt-3 shadow p-3 mb-5 bg-white rounded">
+                <form [formGroup]="form" (ngSubmit)="submit()">
+                    <div class="p-2 bd-highlight">
+                        <p class="text3">Let's get in touch</p>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input placeholder="Email" [ngClass]="{
+                        'has-error':form.controls.Email.touched && form.controls.Email.invalid,
+                        'has-success':form.controls.Email.touched && form.controls.Email.valid}" type="email" name="Email" formControlName="Email" class="form-control">
+                        <span style="color:red;" *ngIf="form.controls.Email.touched && form.controls.Email.invalid">Enter
+                            valid email
+                        </span>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input placeholder="Password" [ngClass]="{
+                            'has-error':form.controls.Passwd.touched && form.controls.Passwd.invalid,
+                            'has-success':form.controls.Passwd.touched && form.controls.Passwd.valid}" type="password" name="Passwd" formControlName="Passwd" class="form-control">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <input placeholder="Confirm-password" [ngClass]="{
+                            'has-error':form.controls.Passwd.touched && form.controls.Passwd.invalid,
+                            'has-success':form.controls.Passwd.touched && form.controls.Passwd.valid}" type="password" name="Passwd" formControlName="Passwd" class="form-control">
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <div class="d-flex flex-row bd-highlight mb-3">
+                            <div class="p-2 bd-highlight mt-1 justify-content-center">
+                                <p class="dateInput">Date of birth</p>
+                            </div>
+                            <div class="p-2 bd-highlight justify-content-center">
+                                <input name="dob" formControlName="dob" type="date">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
