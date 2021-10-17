@@ -6,7 +6,7 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center" *ngFor="let item of urls">
                         <div class="col-xl-9 d-flex flex-column">
                             <div class="p-2">
-                                <a [routerLink]="[item.shortUrl]" target="_blank" (click)="clickEvent(item)">{{currUrl+item.shortUrl}}</a>
+                                <a [href]="item.longUrl" target="_blank" (click)="clickEvent(item)">{{currUrl+item.shortUrl}}</a>
                             </div>
                             <div class="p-2">
                                 <p class="text1 shadow p-3 rounded">{{item.longUrl}}</p>
