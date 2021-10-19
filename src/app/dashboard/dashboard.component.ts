@@ -54,7 +54,7 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit(): void {
     this.randColors();
-    this.weekNumber();
+    console.log(this.weekNumber());
     this.load();
   }
   load() {
@@ -101,16 +101,15 @@ export class DashboardComponent implements OnInit {
   weekNumber() {
     let currentdate = new Date(this.currDate);
     let oneJan = new Date(currentdate.getFullYear(), 0, 1);
-    let numberOfDays = Math.floor((currentdate.valueOf() - oneJan.valueOf()) / (24 * 60 * 60 * 1000));
+    let numberOfDays = Math.ceil((currentdate.valueOf() - oneJan.valueOf()) / (24 * 60 * 60 * 1000));
     let result=0;
-    if(currentdate.getDay()==5){
-      result = Math.floor((currentdate.getDay() + 1 + numberOfDays) / 7);
-    }
-    else{
+    if(currentdate.getDay()!=5){
       result = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7);
     }
+    else{
+      result = Math.floor((currentdate.getDay() + 1 + numberOfDays) / 7);
+    }
     this.getDateOfWeek(result,Number(this.currYear));
-    return result;
   }
 
   getDateOfWeek(w: number, y: number) {
